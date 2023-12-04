@@ -30,11 +30,6 @@ export default function Profile() {
   const [updateSuccess,setUpdateSuccess] = useState(false);
   const dispatch = useDispatch();
   
-
- // console.log(formData);
-  //console.log(filePerc);
-  //console.log(fileUploadError);
-
   //firebase storage
   /* allow read;
   allow write: if
@@ -132,7 +127,7 @@ export default function Profile() {
     catch(error){
       dispatch(signOutUserFailure(error.message));
     }
-  }
+  };
 
   return (
     <div className='p-3 max-w-lg mx-auto'>
